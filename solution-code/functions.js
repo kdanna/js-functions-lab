@@ -88,15 +88,21 @@ function findLongestWord (arr) {
 
 
 // Question 8
-function filterLongWords (arr,num) {
-  newArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    if(arr[i].length > num){
-      newArr.push(arr[i]);
+var stuffToWriteWith = ["pencil", "pen","marker"];
+var i = 3;
+
+function filterLongWords (someArray, num) {
+  longestWords = [];
+  for (var j = 0; j < someArray.length; j++) {
+    if (someArray[j].length > num) {
+    longestWords.push(someArray[j]);
     }
-  }
-  return newArr;
 }
+return longestWords;
+}
+
+//test it
+filterLongWords(stuffToWriteWith, i);
 
 
 // Bonus 1
