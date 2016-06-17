@@ -107,9 +107,23 @@ findLongestWord(word);
 
 
 // Question 8
-function filterLongWords () {
-  
+
+var word = ["hello", "mississippi","hi"];
+var x = 2;
+
+function filterLongWords (words, number) {
+var largest = [];
+for (var i = 0; i < someArray.length; i++) {
+    if (someArray[i].length > number) {
+    largest.push(words[i]);
 }
+}
+	return largest;  
+}
+
+//test it
+
+filterLongWords(word, x)
 
 
 // Bonus 1
